@@ -40,5 +40,10 @@ namespace LambdaExpressionDemo
                 Console.WriteLine("No,We dont have teen-agers in the list ");
             }
         }
+        public void AverageRecord()
+        {
+            var result = this.personsList.Average(x => x.Age);
+            Console.WriteLine("Average Age In The List :"+" " +result);
+        }
     }
 }

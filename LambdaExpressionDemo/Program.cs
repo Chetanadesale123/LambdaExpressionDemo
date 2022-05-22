@@ -9,6 +9,7 @@ namespace LambdaExpressionDemo
             management.AddDefaultData();
             management.GetTopRecords();
             management.CheckingForTeenagePerson();
+            management.AverageRecord();
         }
     }
 }
