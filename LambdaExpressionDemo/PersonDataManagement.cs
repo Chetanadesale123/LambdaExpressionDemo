@@ -57,5 +57,10 @@ namespace LambdaExpressionDemo
                 Console.WriteLine("Name is not present in List");
             }
         }
+        public void SkipRecord()
+        {
+            var result = this.personsList.Skip(this.personsList.Where(x => x.Age < 60).Count());
+            Display(result);
+        }
     }
 }

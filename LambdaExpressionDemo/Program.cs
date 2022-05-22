@@ -11,6 +11,7 @@ namespace LambdaExpressionDemo
             management.CheckingForTeenagePerson();
             management.AverageRecord();
             management.GetName();
+            management.SkipRecord();
         }
     }
 }
