@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+namespace LambdaExpressionDemo
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            PersonDataManagement management = new PersonDataManagement();
+            management.AddDefaultData();
+        }
+    }
+}
