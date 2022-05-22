@@ -10,6 +10,7 @@ namespace LambdaExpressionDemo
             management.GetTopRecords();
             management.CheckingForTeenagePerson();
             management.AverageRecord();
+            management.GetName();
         }
     }
 }

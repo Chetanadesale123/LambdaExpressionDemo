@@ -45,5 +45,17 @@ namespace LambdaExpressionDemo
             var result = this.personsList.Average(x => x.Age);
             Console.WriteLine("Average Age In The List :"+" " +result);
         }
+        public void GetName()
+        {
+            var result = this.personsList.Where(x => x.Name == "chetana");
+            if (result != null)
+            {
+                Console.WriteLine("Name present in list");
+            }
+            else
+            {
+                Console.WriteLine("Name is not present in List");
+            }
+        }
     }
 }
