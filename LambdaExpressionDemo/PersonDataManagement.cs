@@ -15,7 +15,7 @@ namespace LambdaExpressionDemo
             personsList.Add(new Person { SSN = 2, Name = "Teena", Address = "amalner", Age = 25 });
             personsList.Add(new Person { SSN = 3, Name = "reena ", Address = "mumbai", Age = 60 });
             personsList.Add(new Person { SSN = 4, Name = "meena ", Address = "pune", Age = 75 });
-            personsList.Add(new Person { SSN = 5, Name = "shila ", Address = "nashik", Age = 30 });
+            personsList.Add(new Person { SSN = 5, Name = "shila ", Address = "nashik", Age = 14 });
         }
         public void GetTopRecords()
         {
@@ -27,6 +27,17 @@ namespace LambdaExpressionDemo
             foreach (var person in personList)
             {
                 Console.WriteLine(person.SSN + " " + person.Name + " " + person.Address + " " + person.Age);
+            }
+        }
+        public void CheckingForTeenagePerson()
+        {
+            if(this.personsList.Any(x =>(x.Age>=13 && x.Age < 18)))
+            {
+                Console.WriteLine("Yes, We have Some teen-agers in the list");
+            }
+            else
+            {
+                Console.WriteLine("No,We dont have teen-agers in the list ");
             }
         }
     }

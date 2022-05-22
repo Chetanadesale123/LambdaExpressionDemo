@@ -8,6 +8,7 @@ namespace LambdaExpressionDemo
             PersonDataManagement management = new PersonDataManagement();
             management.AddDefaultData();
             management.GetTopRecords();
+            management.CheckingForTeenagePerson();
         }
     }
 }
