@@ -17,5 +17,17 @@ namespace LambdaExpressionDemo
             personsList.Add(new Person { SSN = 4, Name = "meena ", Address = "pune", Age = 75 });
             personsList.Add(new Person { SSN = 5, Name = "shila ", Address = "nashik", Age = 30 });
         }
+        public void GetTopRecords()
+        {
+            var result = this.personsList.Where(x => x.Age < 60).Take(2);
+            Display(result);
+        }
+        public void Display(IEnumerable<Person> personList)
+        {
+            foreach (var person in personList)
+            {
+                Console.WriteLine(person.SSN + " " + person.Name + " " + person.Address + " " + person.Age);
+            }
+        }
     }
 }
