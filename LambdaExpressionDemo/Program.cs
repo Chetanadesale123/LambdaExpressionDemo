@@ -12,6 +12,7 @@ namespace LambdaExpressionDemo
             management.AverageRecord();
             management.GetName();
             management.SkipRecord();
+            management.RemoveRecord();
         }
     }
 }
